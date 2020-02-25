@@ -206,7 +206,7 @@ where
     }
 
     fn bottom_right(&self) -> Point {
-        self.top_left() + self.size()
+        self.top_left() + self.size() - Size::unit()
     }
 
     fn size(&self) -> Size {
